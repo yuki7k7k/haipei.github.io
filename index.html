@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Haipei's TEM Portfolio</title>
+  <title>Haipei's Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: #f5f7fa;
+      background: #FFEAED; /* soft light pink */
       display: flex;
     }
 
     /* Sidebar */
     .sidebar {
       width: 250px;
-      background: #fff;
+      background: #9ECAD6; /* light blue */
       padding: 30px 20px;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.05);
-      height: 100vh;
       box-sizing: border-box;
+      height: 100vh;
       position: fixed;
+      color: #fff;
     }
     .sidebar h1 {
       font-size: 24px;
@@ -27,20 +27,20 @@
     }
     .sidebar p {
       font-size: 14px;
-      color: #555;
-      line-height: 1.5;
+      color: #f0f8ff;
+      line-height: 1.6;
     }
     .nav a {
       display: block;
-      color: #333;
-      margin: 10px 0;
+      color: #ffffff;
+      margin: 12px 0;
       text-decoration: none;
       font-weight: bold;
     }
     .social a {
       margin-right: 10px;
       text-decoration: none;
-      color: #555;
+      color: #ffffff;
     }
 
     /* Main content */
@@ -49,6 +49,10 @@
       padding: 40px 30px;
       flex: 1;
     }
+    h2 {
+      color: #748DAE;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -61,9 +65,11 @@
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       transition: 0.3s;
+      border: 2px solid #F5CBCB;
     }
     .card:hover {
       transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     .card img {
       width: 100%;
@@ -75,11 +81,13 @@
     .card h2 {
       font-size: 18px;
       margin: 0 0 10px;
+      color: #748DAE;
     }
     .card p {
       font-size: 14px;
-      color: #666;
+      color: #444;
     }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -91,26 +99,22 @@
 <body>
 
   <div class="sidebar">
-    <h1>Haipei</h1>
-    <p>Ph.D. candidate at NUS. I specialize in low-dose TEM, iDPC-STEM, and MicroED for beam-sensitive materials like COFs and MOFs.</p>
+    <h1>Haipei SHAO (Yuki)</h1>
+    <p>Ph.D. candidate at NUS & A*STAR. Advanced user of latest aberration corrected TEM (Spectra 300).</p>
     <div class="nav">
-      <a href="#">Home</a>
-      <a href="#">Gallery</a>
+      <a href="#">About Yuki</a>
+      <a href="#">TEM Gallery</a>
       <a href="#">CV</a>
-    </div>
-    <div class="social">
-      <a href="#">✉️</a>
-      <a href="#">🔗</a>
-      <a href="#">📘</a>
+      <a href="#">Contact me</a>
     </div>
   </div>
 
   <div class="main">
-    <h2>🖼️ TEM Image Gallery</h2>
+    <h2>🖼️ TEM Gallery</h2>
     <div class="gallery">
 
       <div class="card">
-        <img src="images/JACS 2025-1.png" alt="TEM 1">
+        <img src="images/JACS (2025).jpg" alt="TEM 1">
         <div class="card-body">
           <h2>COF FFT Pattern</h2>
           <p>FFT of low-dose iDPC-STEM image showing periodicity in COF layers.</p>
@@ -118,7 +122,7 @@
       </div>
 
       <div class="card">
-        <img src="images/tem2.jpg" alt="TEM 2">
+        <img src="images/NM (2025).jpg" alt="TEM 2">
         <div class="card-body">
           <h2>MOF Layered Structure</h2>
           <p>High-resolution image of Zr-based MOF stack at 300 kV with K3 camera.</p>
@@ -136,7 +140,7 @@
     </div>
 
     <footer>
-      © 2025 Haipei | Built with 💻 + GitHub Pages
+      © 2025 Haipei | Built with GitHub Pages
     </footer>
   </div>
 
