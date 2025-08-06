@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Haipei's Portfolio</title>
+  <title>Yuki's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
@@ -22,6 +23,9 @@
       height: 100vh;
       position: fixed;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .sidebar h1 {
       font-size: 24px;
@@ -50,6 +54,14 @@
       color: #333;
       font-size: 14px;
       text-decoration: none;
+    }
+
+    .note {
+      font-size: 13px;
+      font-style: italic;
+      font-weight: bold;
+      color: #5b684f;
+      margin-top: 20px;
     }
 
     /* Main content */
@@ -84,8 +96,8 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     .card img {
-      width: calc(100% - 40px);
-      margin: 0 20px;
+      width: calc(100% - 30px);
+      margin: 15px;
       border-radius: 6px;
       display: block;
     }
@@ -114,21 +126,27 @@
 <body>
 
   <div class="sidebar">
-    <h1>Haipei</h1>
+    <div>
+      <h1>Haipei SHAO (Yuki)</h1>
+      <div class="nav">
+        <p>
+          Ph.D. candidate at NUS.<br>
+          Bachelor in Tsinghua University.<br>
+          Expert in covalent organic frameworks.<br>
+          Advanced user of latest aberration corrected TEM.
+        </p>
+      </div>
 
-    <div class="nav">
-      <a href="#">About Yuki</a>
-      <p style="margin-top: 10px;">Ph.D. candidate at NUS.<br>
-      Advanced user of latest aberration corrected TEM (Spectra 300).</p>
-
-      <a href="#">TEM Gallery</a>
+      <div class="contact">
+        <strong>Contact me</strong>
+        <a href="mailto:haipei.shao@gmail.com">✉️ haipei.shao@gmail.com</a>
+        <a href="https://www.linkedin.com/in/shaohaipei" target="_blank">🔗 LinkedIn</a>
+        <a href="tel:+65XXXXXXX">☎️ +65 8885 0994</a>
+      </div>
     </div>
 
-    <div class="contact">
-      <strong>Contact me</strong>
-      <a href="mailto:haipei@example.com">✉️ haipei.shao@gmail.com</a>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">🔗 LinkedIn</a>
-      <a href="https://scholar.google.com/citations?user=yourID" target="_blank">🧠 Google Scholar</a>
+    <div class="note">
+      Graduating in 2026, actively seeking opportunities in TEM-related positions.
     </div>
   </div>
 
@@ -139,16 +157,16 @@
       <div class="card">
         <img src="images/JACS (2025).png" alt="TEM 1">
         <div class="card-body">
-          <h2>COF FFT Pattern</h2>
-          <p>FFT of low-dose iDPC-STEM image showing periodicity in COF layers.</p>
+          <h2>Polycrystalline COFs</h2>
+          <p>Low-dose imaging of in situ-grown polyhedral COF thin film on TEM grid.</p>
         </div>
       </div>
 
       <div class="card">
         <img src="images/NM (2025).png" alt="TEM 2">
         <div class="card-body">
-          <h2>MOF Layered Structure</h2>
-          <p>High-resolution image of Zr-based MOF stack at 300 kV with K3 camera.</p>
+          <h2>COF Pore channels</h2>
+          <p>Low-dose HRTEM images of porphyrin COFs at 300 kV with direct electron detector.</p>
         </div>
       </div>
 
