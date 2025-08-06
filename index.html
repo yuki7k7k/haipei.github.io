@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yuki's Portfolio</title>
+  <title>Haipei's Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: #EDE8DC; /* ivory white */
+      font-family: 'Open Sans', sans-serif;
+      background: #EDE8DC;
       display: flex;
     }
 
     /* Sidebar */
     .sidebar {
       width: 250px;
-      background: #C1CFA1; /* light green */
+      background: #C1CFA1;
       padding: 30px 20px;
       box-sizing: border-box;
       height: 100vh;
@@ -23,6 +25,7 @@
     }
     .sidebar h1 {
       font-size: 24px;
+      font-family: 'Lora', serif;
       margin-bottom: 10px;
     }
     .sidebar p {
@@ -37,10 +40,16 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .social a {
-      margin-right: 10px;
-      text-decoration: none;
+
+    .contact {
+      margin-top: 30px;
+    }
+    .contact a {
+      display: block;
+      margin-top: 6px;
       color: #333;
+      font-size: 14px;
+      text-decoration: none;
     }
 
     /* Main content */
@@ -50,7 +59,10 @@
       flex: 1;
     }
     h2 {
+      font-family: 'Lora', serif;
       color: #A5B68D;
+      font-size: 28px;
+      margin-bottom: 30px;
     }
 
     .gallery {
@@ -65,23 +77,26 @@
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       transition: 0.3s;
-      border: 2px solid #E7CCCC; /* soft pink border */
+      border: 2px solid #E7CCCC;
     }
     .card:hover {
       transform: scale(1.02);
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     .card img {
-      width: 100%;
-      height: auto;
+      width: calc(100% - 40px);
+      margin: 0 20px;
+      border-radius: 6px;
+      display: block;
     }
     .card-body {
       padding: 20px;
     }
     .card h2 {
+      font-family: 'Lora', serif;
       font-size: 18px;
       margin: 0 0 10px;
-      color: #748d6a; /* muted green title */
+      color: #748d6a;
     }
     .card p {
       font-size: 14px;
@@ -99,18 +114,26 @@
 <body>
 
   <div class="sidebar">
-    <h1>Haipei SHAO (Yuki)</h1>
-    <p>Ph.D. candidate at NUS & A*STAR. Advanced user of latest aberration corrected TEM (Spectra 300).</p>
+    <h1>Haipei</h1>
+
     <div class="nav">
       <a href="#">About Yuki</a>
+      <p style="margin-top: 10px;">Ph.D. candidate at NUS.<br>
+      Advanced user of latest aberration corrected TEM (Spectra 300).</p>
+
       <a href="#">TEM Gallery</a>
-      <a href="#">CV</a>
-      <a href="#">Contact me</a>
+    </div>
+
+    <div class="contact">
+      <strong>Contact me</strong>
+      <a href="mailto:haipei@example.com">✉️ haipei.shao@gmail.com</a>
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">🔗 LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=yourID" target="_blank">🧠 Google Scholar</a>
     </div>
   </div>
 
   <div class="main">
-    <h2>🖼️ TEM Gallery</h2>
+    <h2>TEM Gallery</h2>
     <div class="gallery">
 
       <div class="card">
