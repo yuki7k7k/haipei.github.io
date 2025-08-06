@@ -25,7 +25,6 @@
       color: #333;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
     .sidebar h1 {
       font-size: 24px;
@@ -37,31 +36,14 @@
       color: #333;
       line-height: 1.6;
     }
-    .nav a {
-      display: block;
-      color: #333;
-      margin: 12px 0;
-      text-decoration: none;
-      font-weight: bold;
-    }
 
     .contact {
       margin-top: 30px;
     }
-    .contact a {
-      display: block;
-      margin-top: 6px;
-      color: #333;
+    .contact p {
+      margin: 6px 0;
       font-size: 14px;
-      text-decoration: none;
-    }
-
-    .note {
-      font-size: 13px;
-      font-style: italic;
-      font-weight: bold;
-      color: #5b684f;
-      margin-top: 20px;
+      color: #333;
     }
 
     /* Main content */
@@ -70,6 +52,16 @@
       padding: 40px 30px;
       flex: 1;
     }
+
+    .highlight-note {
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: #748d6a;
+      margin-bottom: 25px;
+    }
+
     h2 {
       font-family: 'Lora', serif;
       color: #A5B68D;
@@ -137,18 +129,18 @@
 
       <div class="contact">
         <strong>Contact me</strong>
-        ✉️ haipei.shao@gmail.com</a>
-        🔗 linkedin.com/in/shaohaipei</a>
-        ☎️ +65 8885 0994</a>
+        <p>✉️ haipei.shao@gmail.com</p>
+        <p>🔗 linkedin.com/in/shaohaipei</p>
+        <p>☎️ +65 8885 0994</p>
       </div>
-    </div>
-
-    <div class="note">
-      Graduating in 2026, actively seeking opportunities in TEM-related positions.
     </div>
   </div>
 
   <div class="main">
+    <div class="highlight-note">
+      🎓 Graduating in 2026 Fall— actively seeking opportunities in <strong>TEM-related research</strong>.
+    </div>
+
     <h2>TEM Gallery</h2>
     <div class="gallery">
 
