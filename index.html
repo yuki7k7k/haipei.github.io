@@ -16,7 +16,6 @@
       font-family: 'Open Sans', sans-serif;
       background: #EDE8DC;
       display: flex;
-      min-height: 100vh;
     }
 
     /* Sidebar */
@@ -26,11 +25,10 @@
       padding: 30px 20px;
       color: #333;
       flex-shrink: 0;
+      height: 100vh;
       position: sticky;
       top: 0;
       align-self: flex-start;
-      height: 100vh;
-      overflow-y: auto;
     }
 
     .sidebar h1 {
@@ -111,9 +109,9 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       justify-content: flex-start;
-      flex-grow: 1;
+      align-items: flex-start;
+      flex: 1;
     }
 
     .card h2 {
@@ -121,10 +119,10 @@
       font-size: 18px;
       color: #748d6a;
       margin: 0 0 10px;
-      text-align: left;
+      min-height: 50px;
       display: flex;
       align-items: center;
-      min-height: 60px; /* Aligns title block across cards */
+      text-align: left;
     }
 
     .card p {
@@ -146,14 +144,14 @@
       color: #aaa;
     }
 
-    /* Responsive fallback */
-    @media (max-width: 960px) {
+    /* Responsive */
+    @media (max-width: 1000px) {
       .gallery {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       body {
         flex-direction: column;
       }
@@ -225,7 +223,7 @@
       </div>
 
       <div class="card">
-        <img src="images/SAC.png" alt="TEM 4">
+        <img src="images/SAC-wq.jpg" alt="TEM 4">
         <div class="card-body">
           <h2>Single-atom Catalyst</h2>
           <p>Single Ni atom deposited on a C3N4 substrate.</p>
