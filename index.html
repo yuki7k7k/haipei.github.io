@@ -71,7 +71,7 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr); /* Fixed to 3 columns */
       gap: 30px;
     }
 
@@ -82,6 +82,10 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       transition: 0.3s;
       border: 2px solid #E7CCCC;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
     .card:hover {
       transform: scale(1.02);
@@ -95,6 +99,10 @@
     }
     .card-body {
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
     }
     .card h2 {
       font-family: 'Lora', serif;
@@ -104,6 +112,11 @@
     }
     .card p {
       font-size: 14px;
+      color: #444;
+    }
+    .card-body p:last-child {
+      margin-top: auto;
+      font-style: italic;
       color: #444;
     }
 
@@ -149,7 +162,7 @@
         <div class="card-body">
           <h2>COF Polycrystals</h2>
           <p>Low-dose HRTEM and iDPC-STEM images of an in situ-grown polyhedral COF thin film on a TEM grid, showing polycrystalline domains with distinct phases and topologies.</p>
-          <p style="font-style: italic;">J. Am. Chem. Soc. (2025)</p>
+          <p>J. Am. Chem. Soc. (2025)</p>
         </div>
       </div>
 
@@ -157,8 +170,8 @@
         <img src="images/NM (2025).png" alt="TEM 2">
         <div class="card-body">
           <h2>COF Pore channels</h2>
-          <p>Low-dose HRTEM images of porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The electron density was 2.92 e-/pixel/s, and the total electron dose of the accumulated drift-corrected image is 17.5 e-/A2.</p>
-          <p style="font-style: italic;">Nat. Mater. 24, 1245–1257 (2025)</p>
+          <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The total electron dose of the accumulated drift-corrected image is within 10-20 e-/A2.</p>
+          <p>Nat. Mater. 24, 1245–1257 (2025)</p>
         </div>
       </div>
 
@@ -166,8 +179,8 @@
         <img src="images/SAC.tif" alt="TEM 3">
         <div class="card-body">
           <h2>Single-atom Catalyst</h2>
-          <p>Single Ni atom deposited on C3N4 substrate.</p>
-          <p style="font-style: italic;">Unpublished</p>
+          <p>Single Ni atom deposited on a C3N4 substrate.</p>
+          <p>Unpublished</p>
         </div>
       </div>
 
@@ -176,9 +189,10 @@
         <div class="card-body">
           <h2>Atomic EDS mapping</h2>
           <p>TePt.</p>
+          <p>Unpublished</p>
         </div>
       </div>
-      
+
     </div>
 
     <footer>
