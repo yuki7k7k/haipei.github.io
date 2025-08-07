@@ -71,7 +71,7 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Fixed to 3 columns */
+      grid-template-columns: repeat(3, 1fr);
       gap: 30px;
     }
 
@@ -87,37 +87,51 @@
       justify-content: space-between;
       height: 100%;
     }
+
     .card:hover {
       transform: scale(1.02);
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
+
     .card img {
-      width: calc(100% - 30px);
-      margin: 15px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
       border-radius: 6px;
       display: block;
+      max-width: 100%;
+      max-height: 300px;
+      object-fit: contain;
     }
+
     .card-body {
       padding: 20px;
       display: flex;
       flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
+      justify-content: flex-start;
+      height: 100%;
     }
-    .card h2 {
+
+    .card-body h2 {
       font-family: 'Lora', serif;
       font-size: 18px;
-      margin: 0 0 10px;
       color: #748d6a;
+      margin: 0 0 10px;
+      text-align: center;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .card p {
+
+    .card-body p {
       font-size: 14px;
       color: #444;
     }
+
     .card-body p:last-child {
       margin-top: auto;
       font-style: italic;
-      color: #444;
     }
 
     footer {
@@ -151,7 +165,7 @@
 
   <div class="main">
     <div class="highlight-note">
-      🎓 Graduating in 2026 Fall— actively seeking opportunities in <strong>TEM-related positions</strong>.
+      🎓 Graduating in 2026 Fall — actively seeking opportunities in <strong>TEM-related positions</strong>.
     </div>
 
     <h2>TEM Gallery</h2>
@@ -201,7 +215,7 @@
           <p>Unpublished</p>
         </div>
       </div>
-      
+
     </div>
 
     <footer>
