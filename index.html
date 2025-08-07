@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Yuki's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     * {
@@ -96,6 +95,18 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
+    .card-title {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      color: #748d6a;
+      margin: 15px auto 0;
+      text-align: center;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .card img {
       width: calc(100% - 30px);
       margin: 15px;
@@ -110,17 +121,6 @@
       flex: 1;
       justify-content: flex-start;
       align-items: flex-start;
-    }
-
-    .card h2 {
-      font-family: 'Lora', serif;
-      font-size: 18px;
-      color: #748d6a;
-      margin: 0 0 10px;
-      min-height: 50px;
-      display: flex;
-      align-items: center;
-      text-align: left;
     }
 
     .card p {
@@ -191,88 +191,86 @@
     </div>
 
     <div class="gallery">
-
       <div class="card">
+        <h2 class="card-title">COF Polycrystals</h2>
         <img src="images/JACS (2025).png" alt="TEM 1">
         <div class="card-body">
-          <h2>COF Polycrystals</h2>
           <p>Low-dose HRTEM and iDPC-STEM images of an in situ-grown polyhedral COF thin film on a TEM grid, showing polycrystalline domains with distinct phases and topologies.</p>
           <p><em>J. Am. Chem. Soc. (2025)</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">COF Pore channels</h2>
         <img src="images/NM (2025).png" alt="TEM 2">
         <div class="card-body">
-          <h2>COF Pore channels</h2>
           <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera).</p>
           <p><em>Nat. Mater. 24, 1245–1257 (2025)</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">MOF with zig-zag phenyl-columns</h2>
         <img src="images/MOF-lzh.png" alt="TEM 3">
         <div class="card-body">
-          <h2>MOF with zig-zag phenyl-columns</h2>
           <p>Low-dose HRTEM image of a Na-MOF filtered with CRISP.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">Single-atom Catalyst</h2>
         <img src="images/SAC.png" alt="TEM 4">
         <div class="card-body">
-          <h2>Single-atom Catalyst</h2>
           <p>STEM image of single nickel atom deposited on a C3N4 substrate.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">Atomic EDS mapping</h2>
         <img src="images/PtTe2.png" alt="TEM 5">
         <div class="card-body">
-          <h2>Atomic EDS mapping</h2>
           <p>Layered transition metal dichalcogenide (TMD) exhibits semiconducting behavior.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">Oxygen Atom Imaging</h2>
         <img src="images/ABO3-oxygen.png" alt="TEM 6">
         <div class="card-body">
-          <h2>Oxygen Atom Imaging</h2>
           <p>STEM-iDPC for imaging light elements in ABO₃ lattice.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">EELS mapping</h2>
         <img src="images/EELS mapping.png" alt="TEM 7">
         <div class="card-body">
-          <h2>EELS mapping</h2>
           <p>EELS mapping for complex semiconductor sample.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
 
       <div class="card">
+        <h2 class="card-title">Single-atom EELS</h2>
         <img src="images/MoS2-Fe.png" alt="TEM 8">
         <div class="card-body">
-          <h2>Single-atom EELS</h2>
-          <p>STEM-iDPC for imaging light element in ABO₃ lattice.</p>
+          <p>Atomic EELS of single-atom Fe doped on MoS2 for single-stom catalyst.</p>
           <p><em>Unpublished</em></p>
         </div>
       </div>
-      
+
       <div class="card">
-    <img src="images/watermelon.png" alt="TEM 9">
-    <div class="card-body">
-      <h2>watermelon!</h2>
-      <p>Actually EDS mapping.</p>
-      <p><em>Published on my social media</em></p>
-    </div>
-  </div>
-   
+        <h2 class="card-title">watermelon!</h2>
+        <img src="images/watermelon.png" alt="TEM 9">
+        <div class="card-body">
+          <p>Actually EDS mapping.</p>
+          <p><em>Published on my social media</em></p>
+        </div>
+      </div>
     </div>
 
     <footer>
