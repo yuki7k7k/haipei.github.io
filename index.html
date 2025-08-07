@@ -11,73 +11,34 @@
       margin: 0;
       font-family: 'Open Sans', sans-serif;
       background: #EDE8DC;
-      display: flex;
     }
 
-    /* Sidebar */
-    .sidebar {
-      width: 250px;
-      background: #C1CFA1;
-      padding: 30px 20px;
-      box-sizing: border-box;
-      height: 100vh;
-      position: fixed;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar h1 {
-      font-size: 24px;
-      font-family: 'Lora', serif;
-      margin-bottom: 10px;
-    }
-
-    .sidebar p {
-      font-size: 14px;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .contact {
-      margin-top: 30px;
-    }
-
-    .contact p {
-      margin: 6px 0;
-      font-size: 14px;
-      color: #333;
-    }
-
-    /* Main content */
     .main {
-      margin-left: 270px;
-      margin-right: auto;
-      padding: 40px 30px;
-      flex: 1;
       max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 24px;
+      color: #84976a;
+      padding: 10px 0 20px 0;
     }
 
     .highlight-note {
       text-align: center;
       font-family: 'Lora', serif;
-      font-size: 18px;
+      font-size: 16px;
       font-style: italic;
-      color: #748d6a;
-      margin-bottom: 25px;
-    }
-
-    h2 {
-      font-family: 'Lora', serif;
-      color: #A5B68D;
-      font-size: 28px;
+      color: #4e5b43;
       margin-bottom: 30px;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
     }
 
     .card {
@@ -89,7 +50,6 @@
       border: 2px solid #E7CCCC;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
 
     .card:hover {
@@ -109,20 +69,26 @@
       display: flex;
       flex-direction: column;
       flex: 1;
-      justify-content: space-between;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
     .card h2 {
       font-family: 'Lora', serif;
       font-size: 18px;
-      margin: 0 0 10px;
       color: #748d6a;
-      text-align: center;
+      margin: 0 0 10px;
+      text-align: left;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
     }
 
     .card p {
       font-size: 14px;
       color: #444;
+      margin: 6px 0;
+      text-align: left;
     }
 
     .card-body p:last-child {
@@ -133,41 +99,20 @@
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin: 50px auto 20px;
       font-size: 13px;
       color: #aaa;
     }
   </style>
 </head>
 <body>
-
-  <div class="sidebar">
-    <div>
-      <h1>Haipei SHAO (Yuki)</h1>
-      <div class="nav">
-        <p>
-          Ph.D. candidate at NUS.<br>
-          Bachelor in Tsinghua University.<br>
-        </p>
-      </div>
-
-      <div class="contact">
-        <strong>Contact me</strong>
-        <p>✉️ haipei.shao@gmail.com</p>
-        <p>🔗 linkedin.com/in/shaohaipei</p>
-        <p>☎️ +65 8885 0994</p>
-      </div>
-    </div>
-  </div>
-
   <div class="main">
+    <h1>TEM Gallery</h1>
     <div class="highlight-note">
       🎓 Graduating in 2026 Fall — actively seeking opportunities in <em><strong>TEM-related positions</strong></em>.
     </div>
 
-    <h2>TEM Gallery</h2>
     <div class="gallery">
-
       <div class="card">
         <img src="images/JACS (2025).png" alt="TEM 1">
         <div class="card-body">
@@ -181,7 +126,7 @@
         <img src="images/NM (2025).png" alt="TEM 2">
         <div class="card-body">
           <h2>COF Pore channels</h2>
-          <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The total electron dose of the accumulated drift-corrected image is within 10-20 e-/A2.</p>
+          <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The total electron dose of the accumulated drift-corrected image is within 10–20 e-/A².</p>
           <p><em>Nat. Mater. 24, 1245–1257 (2025)</em></p>
         </div>
       </div>
@@ -212,13 +157,11 @@
           <p><em>Unpublished</em></p>
         </div>
       </div>
-
     </div>
 
     <footer>
       © 2025 Haipei | Built with GitHub Pages
     </footer>
   </div>
-
 </body>
 </html>
