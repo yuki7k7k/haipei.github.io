@@ -26,11 +26,13 @@
       display: flex;
       flex-direction: column;
     }
+
     .sidebar h1 {
       font-size: 24px;
       font-family: 'Lora', serif;
       margin-bottom: 10px;
     }
+
     .sidebar p {
       font-size: 14px;
       color: #333;
@@ -40,6 +42,7 @@
     .contact {
       margin-top: 30px;
     }
+
     .contact p {
       margin: 6px 0;
       font-size: 14px;
@@ -51,6 +54,9 @@
       margin-left: 270px;
       padding: 40px 30px;
       flex: 1;
+      max-width: 1300px;
+      margin-right: auto;
+      margin-left: 270px;
     }
 
     .highlight-note {
@@ -71,7 +77,7 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
 
@@ -84,7 +90,6 @@
       border: 2px solid #E7CCCC;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       height: 100%;
     }
 
@@ -94,37 +99,28 @@
     }
 
     .card img {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
+      width: calc(100% - 30px);
+      margin: 15px;
       border-radius: 6px;
       display: block;
-      max-width: 100%;
-      max-height: 300px;
-      object-fit: contain;
     }
 
     .card-body {
       padding: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      height: 100%;
+      flex: 1;
     }
 
-    .card-body h2 {
+    .card h2 {
       font-family: 'Lora', serif;
       font-size: 18px;
+      margin: 0 0 12px;
       color: #748d6a;
-      margin: 0 0 10px;
       text-align: center;
-      min-height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
-    .card-body p {
+    .card p {
       font-size: 14px;
       color: #444;
     }
@@ -132,6 +128,8 @@
     .card-body p:last-child {
       margin-top: auto;
       font-style: italic;
+      color: #444;
+      text-align: left;
     }
 
     footer {
@@ -165,7 +163,7 @@
 
   <div class="main">
     <div class="highlight-note">
-      🎓 Graduating in 2026 Fall — actively seeking opportunities in <strong>TEM-related positions</strong>.
+      🎓 Graduating in 2026 Fall — actively seeking opportunities in <strong><em>TEM-related positions</em></strong>.
     </div>
 
     <h2>TEM Gallery</h2>
@@ -176,7 +174,7 @@
         <div class="card-body">
           <h2>COF Polycrystals</h2>
           <p>Low-dose HRTEM and iDPC-STEM images of an in situ-grown polyhedral COF thin film on a TEM grid, showing polycrystalline domains with distinct phases and topologies.</p>
-          <p>J. Am. Chem. Soc. (2025)</p>
+          <p><em>J. Am. Chem. Soc. (2025)</em></p>
         </div>
       </div>
 
@@ -184,8 +182,8 @@
         <img src="images/NM (2025).png" alt="TEM 2">
         <div class="card-body">
           <h2>COF Pore channels</h2>
-          <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The total electron dose of the accumulated drift-corrected image is within 10-20 e-/A2.</p>
-          <p>Nat. Mater. 24, 1245–1257 (2025)</p>
+          <p>Low-dose HRTEM images of two porphyrin COFs at 300 kV with direct electron detector (Gatan K3 camera). The total electron dose of the accumulated drift-corrected image is within 10–20 e-/A².</p>
+          <p><em>Nat. Mater. 24, 1245–1257 (2025)</em></p>
         </div>
       </div>
 
@@ -194,7 +192,7 @@
         <div class="card-body">
           <h2>MOF with zig-zag phenyl columns</h2>
           <p>Low-dose HRTEM image of a Na-MOF filtered with CRISP.</p>
-          <p>Unpublished</p>
+          <p><em>Unpublished</em></p>
         </div>
       </div>
 
@@ -203,7 +201,7 @@
         <div class="card-body">
           <h2>Single-atom Catalyst</h2>
           <p>Single Ni atom deposited on a C3N4 substrate.</p>
-          <p>Unpublished</p>
+          <p><em>Unpublished</em></p>
         </div>
       </div>
 
@@ -212,7 +210,7 @@
         <div class="card-body">
           <h2>Atomic EDS mapping</h2>
           <p>Layered transition metal dichalcogenide (TMD) exhibits semiconducting behavior.</p>
-          <p>Unpublished</p>
+          <p><em>Unpublished</em></p>
         </div>
       </div>
 
